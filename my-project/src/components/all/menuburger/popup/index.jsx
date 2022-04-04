@@ -14,7 +14,7 @@ const Popup = ({ link }) => {
       </Flex>
       {link.map((link) => {
         return (
-          <Link href={link.href}>
+          <Link href={link.href} key={link.page}>
             <a className='text-2xl font-light	 m-auto space-y-5 tracking-wide'>
               {link.page}
             </a>

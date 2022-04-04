@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useState, useEffect } from "react";
 import Container from "../../shared/composers/container";
 import Flex from "../../shared/composers/flex";
@@ -10,6 +11,9 @@ const Input = () => {
   const [message, setMessage] = useState("");
   const [checked, setChecked] = useState(false);
   const [isActive, setActive] = useState(false);
+  const emailRegex = RegExp(
+    /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
+  );
   //Functions
   function handleClick() {
     setChecked((prevChecked) => !prevChecked);
@@ -17,7 +21,7 @@ const Input = () => {
   //Conditions
   useEffect(() => {
     setActive(
-      email !== "" &&
+      email.match(emailRegex) &&
         objet !== "" &&
         ref !== "" &&
         message !== "" &&
@@ -25,7 +29,6 @@ const Input = () => {
     ),
       [email, objet, ref, message, checked];
   });
-  console.log(isActive, "isActive");
   return (
     <Container className="mt-16 mx-7">
       <Container className="mt-11 border-b-2 py-2">
@@ -88,7 +91,7 @@ const Input = () => {
         className={
           isActive
             ? "bg-[#3B3C3E] text-white border-2 border-white rounded-md py-3 px-5 mx-36 mt-24"
-            : "disabled bg-red-800 text-white border-2 border-white rounded-md py-3 px-5 mx-36 mt-24"
+            : "disabled bg-[#3B3C3E] text-white border-2 border-white rounded-md py-3 px-5 mx-36 mt-24"
         }
       >
         ENVOYER

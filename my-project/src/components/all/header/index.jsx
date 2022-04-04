@@ -1,13 +1,12 @@
 import Link from "next/link";
 import Flex from "../../shared/composers/flex";
 import Container from "../../shared/composers/container";
+import Menuburger from "../menuBurger";
 
 const Header = () => {
   return (
-    <Container>
-      <Flex justify='center' className='text-[42px] font-semibold'>
-        Archybald
-      </Flex>
+    <Container className='flex justify-center'>
+      <Menuburger />
       <Container>
         <Flex justify='center'>Découvrez nos biens de prestiges</Flex>
         <Flex justify='center'>

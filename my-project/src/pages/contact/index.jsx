@@ -6,7 +6,7 @@ import Input from "../../components/contactus/input";
 
 const Contact = () => {
   return (
-    <div className="bg-[#3B3C3E] h-full flex justify-center ">
+    <div className="bg-[#3B3C3E] text-white h-full flex justify-center ">
       <div>
         <Header />
         <Info />

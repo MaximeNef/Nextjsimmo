@@ -82,7 +82,7 @@ const Input = () => {
         onChange={handleClick}
         checked={checked}
       />
-      <Flex className="mt-2 mx-3">
+      <Flex className="mt-2 mx-3 text-center">
         Je déclare accepter que les informations ci dessus mentionnées soient
         conservées et utilisées par www.archybald.be, aux fins de reprendre
         contact avec moi et de répondre à mes demandes.

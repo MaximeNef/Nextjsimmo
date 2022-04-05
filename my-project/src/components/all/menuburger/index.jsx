@@ -50,16 +50,17 @@ const Menuburger = () => {
     }
   }
   return (
-    <Container>
-      <Flex justify='center' className='text-[42px] font-semibold  '>
+    <Container className=''>
+      <Container className='text-[42px] font-semibold m-auto mt-[-60px]'>
         <Image
           src='/assets/logo.png'
           alt='Picture of the author'
           width={300}
           height={200}
         />
-      </Flex>
-      <Container onClick={handelClick} className=' right-3 z-20 fixed'>
+      </Container>
+
+      <Container onClick={handelClick} className=' right-3 z-20 fixed mt-3'>
         <Lottie
           options={defaultOptions}
           height={48}
@@ -67,7 +68,8 @@ const Menuburger = () => {
           isPaused={pause}
           IsPlaying={play}
         />
-      </Container>{" "}
+      </Container>
+
       {/* pop-Up menu burger  */}
       <motion.div
         initial={false}

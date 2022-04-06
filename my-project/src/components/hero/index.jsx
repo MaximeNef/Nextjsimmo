@@ -99,8 +99,8 @@ const Hero = () => {
             onLoad={() => setLoaded(true)}
           />
         </motion.div>
-        <Container className='relative  '>
-          <Container className='absolute text-center'>
+        <Container className='relative h-full  '>
+          <Container className='absolute text-center w-full '>
             <Image
               className='relative w-56 h-56 '
               src='/assets/logo.png'
@@ -110,7 +110,7 @@ const Hero = () => {
             />{" "}
             <button
               onClick={handleClick}
-              className='border-2  m-auto p-4 rounded-full font-bold animate-bounce  mt-20'
+              className='border-2  m-auto p-4 rounded-full font-bold animate-bounce  mt-40'
             >
               EXPLORE
             </button>

@@ -1,5 +1,5 @@
 import Lottie from "react-lottie";
-import burgerMenu from "./../../../../public/assets/lotties/whitemenu.json";
+import burgerMenu from "./../../../../public/assets/lotties/burgermenu.json";
 import Container from "../../shared/composers/container";
 import { useState } from "react";
 import Popup from "./popup";
@@ -67,7 +67,7 @@ const Menuburger = () => {
         initial={false}
         variants={menuVariants}
         animate={isOpen ? "opened" : "closed"}
-        className='bg-[#3B3C3E] h-full w-full fixed z-10 flex '
+        className='bg-white h-full w-full fixed z-10 flex '
         transition={{
           duration: 0.7,
           times: [0, 0.1, 0.9, 1],

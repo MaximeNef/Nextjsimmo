@@ -2,30 +2,39 @@ import Container from "../shared/composers/container";
 import Flex from "../shared/composers/Flex";
 import Image from "next/image";
 import FavoriteCard from "./FavoriteCard";
+import { useRouter } from "next/router";
+
 const Card = () => {
+  const router = useRouter();
+  const href = "/details";
+  const handleClick = () => {
+    router.push(href);
+  };
   return (
-    <Container className=' mx-10  my-10 p-8 h-[600px]  rounded-[30px] shadow-2xl relative'>
+    <Container
+      onClick={handleClick}
+      className=' mx-4  my-10 p-8 h-[600px]   rounded-[30px] shadow-2xl relative'
+    >
       <Image
         src='/assets/card/villa.png'
         quality={100}
         layout={"fill"}
-        className=' mx-10 bg-black h-[600px] my-10  rounded-[30px] '
+        className=' mx-10 bg-black h-[600px] my-10  rounded-[30px]'
       />
 
       <Flex type='col' justify='center'>
         <Flex
           className='relative ml-auto items-center shadow-black shadow-2xl
             
-          bg-gray-600 rounded-full px-3 py-2 text-center max-h-[50px] w-[118px]'
+          bg-gray-600 rounded-full px-3 py-2 text-center max-h-[50px] w-[118px] bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60'
         >
-          <Flex
-            type='col'
-            align='center'
-            justify='center'
-            className='m-auto pt-1'
-          >
-            <Container className=' rounded-full h-3 w-3 bg-red-700 m-auto '></Container>{" "}
-            <Container className='h-[10px] w-[1px] bg-white mx-auto mb-2'></Container>
+          <Flex type='col' align='center' justify='center' className='m-auto '>
+            <Image
+              src='/assets/card/loca.svg'
+              alt='Picture of the author'
+              width={25}
+              height={25}
+            />
           </Flex>
           <Flex className='font-semibold text-lg pr-4'> Maps</Flex>
         </Flex>{" "}
@@ -45,3 +54,11 @@ const Card = () => {
   );
 };
 export default Card;
+
+// afficher la card du product en question
+// quand je click dessus ( onClick ) je dois afficher la page details
+// si l'élément est pas encore clicker => normal
+// si élément clicker => detail du product
+// l'image prends toute la largeur de la page
+// une autre div vient par au dessus de l'image
+// la div est scrallable

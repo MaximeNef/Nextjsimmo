@@ -1,3 +1,26 @@
 {
-  "title": "francais"
+  "header_description": "Découvrez nos biens de prestige",
+  "header_word1": "A",
+  "header_vendre": "vendre",
+  "header_word2": "et à",
+  "header_louer": "louer",
+  "header_référence": "Par référence",
+  "header_tous": "Tous",
+  "header_maisons": "Maisons",
+  "header_appartements": "Appartements",
+  "header_contact": "Nous contacter",
+  "contact_info_title": "NOUS CONTACTER",
+  "contact_info_map": "[VOIR CARTE]",
+  "contact_info_facebook": "Notre page facebook",
+  "contact_input_object": "Objet",
+  "contact_input_refbien": "Référence du bien",
+  "contact_input_message": "Ecrivez votre message",
+  "contact_input_declaration": "Je déclare accepter que les informations ci dessus mentionnées soient conservées et utilisées par www.archybald.be, aux fins de reprendre contact avec moi et de répondre à mes demandes.",
+  "contact_input_bouton": "ENVOYER",
+  "contact_entrep_numagent": "Agent immobilier agréé",
+  "contact_aboutus_mentions": "Mentions Légales",
+  "popup_acceuil": "Acceuil",
+  "popup_biens": "Nos biens",
+  "popup_about": "A propos",
+  "popup_contact": "Contact"
 }

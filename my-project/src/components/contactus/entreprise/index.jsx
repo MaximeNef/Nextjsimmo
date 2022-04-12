@@ -1,14 +1,16 @@
 import Container from "../../shared/composers/container";
 import Flex from "../../shared/composers/flex";
+import useTranslation from "next-translate/useTranslation";
 
 const Entreprise = () => {
+  const { t, lang } = useTranslation("common");
   return (
     <Container>
       <Flex justify="center" className="text-sm mt-20">
         Entreprise n° BE 0836 102 386
       </Flex>
       <Flex justify="center" className="text-sm mt-1">
-        Agent immobilier agréé n° 505 226
+        {t("contact_entrep_numagent")} n° 505 226
       </Flex>
       <Container className="text-xs mt-8 mx-12 text-center">
         Instance Officielle de Contrôle: IPI (Institut professionel des Agents

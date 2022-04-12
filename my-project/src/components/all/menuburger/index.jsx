@@ -5,6 +5,7 @@ import { useState } from "react";
 import Popup from "./popup";
 import Flex from "../../shared/composers/flex";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const Menuburger = () => {
   //menu= valeur de la fonction ,   setMenu= valeur qui va être changé, useState= valeur initiale (pop-up burger menu )
@@ -49,11 +50,17 @@ const Menuburger = () => {
     }
   }
   return (
-    <Container>
-      <Flex justify='center' className='text-[42px] font-semibold  '>
-        Archybald
-      </Flex>
-      <Container onClick={handelClick} className=' right-3 z-20 fixed'>
+    <Container className=''>
+      <Container className='text-[42px] font-semibold m-auto mt-[-60px]'>
+        <Image
+          src='/assets/logo.png'
+          alt='Picture of the author'
+          width={300}
+          height={200}
+        />
+      </Container>
+
+      <Container onClick={handelClick} className=' right-3 z-20 fixed mt-3'>
         <Lottie
           options={defaultOptions}
           height={48}
@@ -61,7 +68,8 @@ const Menuburger = () => {
           isPaused={pause}
           IsPlaying={play}
         />
-      </Container>{" "}
+      </Container>
+
       {/* pop-Up menu burger  */}
       <motion.div
         initial={false}

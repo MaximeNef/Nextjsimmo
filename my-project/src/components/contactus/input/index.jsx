@@ -39,7 +39,7 @@ const Input = () => {
           onChange={(e) => {
             setEmail(e.currentTarget.value);
           }}
-          className="bg-[#3B3C3E] outline-0"
+          className="bg-white outline-0"
         />
       </Container>
       <Container className="mt-11 border-b-2 py-2">
@@ -50,7 +50,7 @@ const Input = () => {
           onChange={(e) => {
             setObjet(e.currentTarget.value);
           }}
-          className="bg-[#3B3C3E] outline-0"
+          className="bg-white outline-0"
         />
       </Container>
       <Container className="mt-11 border-b-2 py-2">
@@ -61,7 +61,7 @@ const Input = () => {
           onChange={(e) => {
             setRef(e.currentTarget.value);
           }}
-          className="bg-[#3B3C3E] outline-0"
+          className="bg-white outline-0"
         />
       </Container>
       <Container className="mt-11 border-b-2">
@@ -71,7 +71,7 @@ const Input = () => {
           onChange={(e) => {
             setMessage(e.currentTarget.value);
           }}
-          className="bg-[#3B3C3E] outline-0 h-36"
+          className="bg-white outline-0 h-36"
         />
       </Container>
       <input
@@ -90,8 +90,8 @@ const Input = () => {
       <button
         className={
           isActive
-            ? "bg-[#3B3C3E] text-white border-2 border-white rounded-md py-3 px-5 mx-36 mt-24"
-            : "disabled bg-[#3B3C3E] text-white border-2 border-white rounded-md py-3 px-5 mx-36 mt-24"
+            ? "bg-white text-black border-2 border-black rounded-md py-3 px-5 mx-36 mt-24"
+            : "disabled bg-white text-black border-2 border-black rounded-md py-3 px-5 mx-36 mt-24"
         }
       >
         ENVOYER

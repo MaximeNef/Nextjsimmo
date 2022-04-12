@@ -111,7 +111,7 @@ const Hero = () => {
             />{" "}
             <button
               onClick={handleClick}
-              className='border-2  m-auto p-4 rounded-full font-bold animate-bounce  mt-64 '
+              className='border-2  m-auto p-4 rounded-full font-bold animate-bounce  mt-64 text-white'
             >
               EXPLORE
             </button>

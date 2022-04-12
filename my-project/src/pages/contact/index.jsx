@@ -1,10 +1,20 @@
-import Header from "../../components/all/header"
+import Header from "../../components/all/header";
+import Aboutus from "../../components/contactus/aboutus";
+import Entreprise from "../../components/contactus/entreprise";
+import Info from "../../components/contactus/info";
+import Input from "../../components/contactus/input";
 
-const Contact =() => {
-    return (
-        <div className="bg-[#3B3C3E] h-screen">Contact Us
-            <Header/>
-        </div>
-    );
+const Contact = () => {
+  return (
+    <div className="bg-[#3B3C3E] text-white h-full flex justify-center ">
+      <div>
+        <Header />
+        <Info />
+        <Input />
+        <Entreprise />
+        <Aboutus />
+      </div>
+    </div>
+  );
 };
-export default Contact
+export default Contact;

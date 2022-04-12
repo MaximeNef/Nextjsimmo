@@ -1,4 +1,7 @@
 import Link from "next/link";
+import Flex from "../../shared/composers/flex";
+import Container from "../../shared/composers/container";
+import Menuburger from "../menuBurger";
 
 const Header = () => {
   return (

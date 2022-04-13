@@ -3,6 +3,7 @@ import Flex from "../../shared/composers/flex";
 import Container from "../../shared/composers/container";
 import Menuburger from "../menuBurger";
 import useTranslation from "next-translate/useTranslation";
+import Image from "next/image";
 
 const Header = () => {
   const { t, lang } = useTranslation("common");
@@ -19,10 +20,23 @@ const Header = () => {
         </Flex>
       </Container>
       <Flex justify="center" className="my-14">
-        <input
-          className="bg-white border-black border rounded-3xl pl-4"
-          placeholder={t("header_référence")}
-        />
+        <label class="relative block">
+          <span class="sr-only">Search</span>
+          <span class="absolute inset-y-0 right-3 flex items-center pl-2">
+            <Image
+              src="/assets/header/search.svg"
+              alt="Picture of the author"
+              width={20}
+              height={20}
+            />
+          </span>
+          <input
+            class="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-2xl py-2 pl-9 pr-3 shadow-sm focus:outline-none sm:text-sm"
+            placeholder={t("header_référence")}
+            type="text"
+            name="search"
+          />
+        </label>
       </Flex>
       <Flex justify="center" className="space-x-2.5">
         <Link href="/">{t("header_tous")}</Link>

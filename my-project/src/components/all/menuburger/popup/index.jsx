@@ -3,6 +3,7 @@ import Flex from "../../../shared/composers/flex";
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import Translation from "../translation";
 
 const Popup = ({ link }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -53,7 +54,7 @@ const Popup = ({ link }) => {
           />
         </Container>
       </Flex>
-      <Flex className="text-base mx-auto">EN | FR | NL</Flex>
+      <Translation />
     </Container>
   );
 };

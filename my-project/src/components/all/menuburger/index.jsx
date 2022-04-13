@@ -3,7 +3,6 @@ import burgerMenu from "./../../../../public/assets/lotties/burgermenu.json";
 import Container from "../../shared/composers/container";
 import { useState } from "react";
 import Popup from "./popup";
-import Flex from "../../shared/composers/flex";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import useTranslation from "next-translate/useTranslation";

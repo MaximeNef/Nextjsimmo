@@ -1,6 +1,6 @@
 {
   "header_description": "Discover our prestigious properties",
-  "header_word1": "For",
+  "header_word1": "for",
   "header_vendre": "sale",
   "header_word2": "and for",
   "header_louer": "rent",
@@ -17,6 +17,7 @@
   "contact_input_message": "Write your message",
   "contact_input_declaration": "I hereby declare accepting that the above and given information are kept and used by www.archybald.be, in the purpose of contacting me and answering my requests.",
   "contact_input_bouton": "SEND",
+  "contact_entrep_numentreprise":"Entreprise",
   "contact_entrep_numagent": "Chartered real estate agent",
   "contact_aboutus_mentions": "Legal Information",
   "popup_acceuil": "Home",

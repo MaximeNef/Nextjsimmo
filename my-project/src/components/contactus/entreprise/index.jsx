@@ -7,7 +7,7 @@ const Entreprise = () => {
   return (
     <Container>
       <Flex justify="center" className="text-sm mt-20">
-        Entreprise n° BE 0836 102 386
+        {t("contact_entrep_numentreprise")} n° BE 0836 102 386
       </Flex>
       <Flex justify="center" className="text-sm mt-1">
         {t("contact_entrep_numagent")} n° 505 226

@@ -1,6 +1,6 @@
 {
   "header_description": "Découvrez nos biens de prestige",
-  "header_word1": "A",
+  "header_word1": "à",
   "header_vendre": "vendre",
   "header_word2": "et à",
   "header_louer": "louer",
@@ -17,6 +17,7 @@
   "contact_input_message": "Ecrivez votre message",
   "contact_input_declaration": "Je déclare accepter que les informations ci dessus mentionnées soient conservées et utilisées par www.archybald.be, aux fins de reprendre contact avec moi et de répondre à mes demandes.",
   "contact_input_bouton": "ENVOYER",
+  "contact_entrep_numentreprise":"Entreprise",
   "contact_entrep_numagent": "Agent immobilier agréé",
   "contact_aboutus_mentions": "Mentions Légales",
   "popup_acceuil": "Acceuil",

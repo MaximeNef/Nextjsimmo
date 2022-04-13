@@ -54,11 +54,3 @@ const Card = () => {
   );
 };
 export default Card;
-
-// afficher la card du product en question
-// quand je click dessus ( onClick ) je dois afficher la page details
-// si l'élément est pas encore clicker => normal
-// si élément clicker => detail du product
-// l'image prends toute la largeur de la page
-// une autre div vient par au dessus de l'image
-// la div est scrallable

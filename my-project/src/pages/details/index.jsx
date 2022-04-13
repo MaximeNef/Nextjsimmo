@@ -10,43 +10,7 @@ const Details = () => {
         <Card />
       </Container>
 
-      <Container className='bg-red-600 rounded-t-[30px] absolute bottom-0 w-full h-1/4 pt-2 px-2 '>
-        <Container> crtfgbfty</Container>
-        <Container> crtfgbfty</Container>
-        <Container> crtfgbfty</Container>
-        <Container> crtfgbfty</Container>
-        <Container> crtfgbfty</Container>
-        <Container> crtfgbfty</Container>
-        <Container> crtfgbfty</Container>
-        <Container> crtfgbfty</Container>
-        <Container> crtfgbfty</Container>
-        <Container> crtfgbfty</Container>
-        <Container> crtfgbfty</Container>
-        <Container> crtfgbfty</Container>
-        <Container> crtfgbfty</Container>
-        <Container> crtfgbfty</Container>
-        <Container> crtfgbfty</Container>
-        <Container> crtfgbfty</Container>
-        <Container> crtfgbfty</Container>
-        <Container> crtfgbfty</Container>
-        <Container> crtfgbfty</Container>
-        <Container> crtfgbfty</Container>
-        <Container> crtfgbfty</Container>
-        <Container> crtfgbfty</Container>
-        <Container> crtfgbfty</Container>
-        <Container> crtfgbfty</Container>
-        <Container> crtfgbfty</Container>
-        <Container> crtfgbfty</Container>
-        <Container> crtfgbfty</Container>
-        <Container> crtfgbfty</Container>
-        <Container> crtfgbfty</Container>
-        <Container> crtfgbfty</Container>
-        <Container> crtfgbfty</Container>
-        <Container> crtfgbfty</Container>
-        <Container> crtfgbfty</Container>
-        <Container> crtfgbfty</Container>
-        <Container> crtfgbfty</Container>
-      </Container>
+      <Container className='bg-red-600 rounded-t-[30px] absolute bottom-0 w-full h-1/4 pt-2 px-6 '></Container>
     </Container>
   );
 };

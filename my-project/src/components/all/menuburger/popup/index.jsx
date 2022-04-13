@@ -5,56 +5,60 @@ import Image from "next/image";
 import Link from "next/link";
 import Translation from "../translation";
 
-const Popup = ({ link }) => {
-  const [isOpen, setIsOpen] = useState(false);
+const Popup = ({ link, isOpen, setIsOpen, burgerClick }) => {
   return (
-    <Container className="text-2xl font-light	 m-auto space-y-5 tracking-wide">
-      <Flex justify="center" className="text-[42px] font-semibold mb-12">
+    <Container className='text-2xl font-light	 m-auto space-y-5 tracking-wide'>
+      <Flex justify='center' className='text-[42px] font-semibold mb-12'>
         Archybald
       </Flex>
       {link.map((link) => {
         return (
           <Link href={link.href} key={link.page}>
-            <a className="text-2xl font-light	 m-auto space-y-5 tracking-wide">
+            <a className='text-2xl font-light	 m-auto space-y-5 tracking-wide'>
               {link.page}
             </a>
           </Link>
         );
       })}
-      <Flex className="mx-auto">
+      <Flex className='mx-auto'>
         <Image
-          src="/vercel.svg"
-          alt="Picture of the author"
+          src='/vercel.svg'
+          alt='Picture of the author'
           width={40}
           height={40}
         />
         <Image
-          src="/vercel.svg"
-          alt="Picture of the author"
+          src='/vercel.svg'
+          alt='Picture of the author'
           width={40}
           height={40}
         />
       </Flex>
-      <Flex justify="center" className="space-x-3">
+      <Flex justify='center' className='space-x-3'>
         <Container>
           <Image
-            className="px-2"
-            src="/assets/favorite.svg"
-            alt="Picture of the author"
+            className='px-2'
+            src='/assets/favorite.svg'
+            alt='Picture of the author'
             width={16}
             height={16}
           />
         </Container>
         <Container>
           <Image
-            src="/assets/favorite.svg"
-            alt="Picture of the author"
+            src='/assets/favorite.svg'
+            alt='Picture of the author'
             width={16}
             height={16}
           />
         </Container>
       </Flex>
-      <Translation />
+
+      <Translation
+        isOpen={isOpen}
+        setIsOpen={setIsOpen}
+        burgerClick={burgerClick}
+      />
     </Container>
   );
 };

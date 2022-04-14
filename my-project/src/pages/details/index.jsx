@@ -10,7 +10,33 @@ const Details = () => {
         <Card />
       </Container>
 
-      <Container className='bg-red-600 rounded-t-[30px] absolute bottom-0 w-full h-1/4 pt-2 px-6 '></Container>
+      <Container className='bg-red-600 rounded-t-[30px] absolute bottom-0 w-full h-1/4 pt-2 px-6 '>
+        <Container>DETAILS</Container>
+        <Container>DETAILS</Container>
+        <Container>DETAILS</Container>
+        <Container>DETAILS</Container>
+        <Container>DETAILS</Container>
+        <Container>DETAILS</Container>
+        <Container>DETAILS</Container>
+        <Container>DETAILS</Container>
+        <Container>DETAILS</Container>
+        <Container>DETAILS</Container>
+        <Container>DETAILS</Container>
+        <Container>DETAILS</Container>
+        <Container>DETAILS</Container>
+        <Container>DETAILS</Container>
+        <Container>DETAILS</Container>
+        <Container>DETAILS</Container>
+        <Container>DETAILS</Container>
+        <Container>DETAILS</Container>
+        <Container>DETAILS</Container>
+        <Container>DETAILS</Container>
+        <Container>DETAILS</Container>
+        <Container>DETAILS</Container>
+        <Container>DETAILS</Container>
+        <Container>DETAILS</Container>
+        <Container>DETAILS</Container>
+      </Container>
     </Container>
   );
 };

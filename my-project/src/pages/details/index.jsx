@@ -3,6 +3,7 @@ import Image from "next/image";
 import Card from "../../components/card";
 import Flex from "../../components/shared/composers/Flex";
 import Description from "../../components/card_detail/description";
+
 import About from "../../components/card_detail/About";
 
 const Details = () => {
@@ -10,6 +11,7 @@ const Details = () => {
     <Container className='bg-white space-y-4 m-4'>
       <Description />
       <About />
+
     </Container>
   );
 };

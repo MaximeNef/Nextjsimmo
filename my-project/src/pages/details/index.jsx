@@ -6,14 +6,16 @@ import Description from "../../components/card_detail/description";
 import Données from "../../components/card_detail/données";
 import About from "../../components/card_detail/About";
 import Energy from "../../components/card_detail/energy";
+import Agency from "../../components/card_detail/agency";
 
 const Details = () => {
   return (
-    <Container className="bg-white space-y-4 m-4">
+    <Container className='bg-white space-y-4 m-4'>
       <Description />
       <Données />
       <About />
       <Energy />
+      <Agency />
     </Container>
   );
 };

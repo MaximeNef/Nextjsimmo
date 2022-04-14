@@ -36,7 +36,7 @@ const Description = () => {
       <Flex justify='end' className=''>
         <Container
           onClick={handleClick}
-          className='text-[#3F8CFF] font-semibold'
+          className='text-[#3F8CFF] font-semibold mt-2'
         >
           {state ? "Lire plus" : "Lire moins"}
         </Container>

@@ -4,12 +4,14 @@ import Card from "../../components/card";
 import Flex from "../../components/shared/composers/Flex";
 import Description from "../../components/card_detail/description";
 import About from "../../components/card_detail/About";
+import Energy from "../../components/card_detail/energy";
 
 const Details = () => {
   return (
     <Container className='bg-white space-y-4 m-4'>
       <Description />
       <About />
+      <Energy />
     </Container>
   );
 };

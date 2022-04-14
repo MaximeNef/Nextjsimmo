@@ -2,15 +2,17 @@ import Container from "../../components/shared/composers/container";
 import Image from "next/image";
 import Card from "../../components/card";
 import Flex from "../../components/shared/composers/Flex";
+import Description from "../../components/card_detail/description";
 
 const Details = () => {
   return (
-    <Container className=''>
-      <Container className='w-full  fixed '>
+    <Container className="">
+      <Container className="w-full  fixed ">
         <Card />
       </Container>
 
-      <Container className='bg-red-600 rounded-t-[30px] absolute bottom-0 w-full h-1/4 pt-2 px-6 '>
+      <Container className="bg-red-600 rounded-t-[30px] absolute bottom-0 w-full h-1/4 pt-2 px-6 ">
+        <Description />
         <Container>DETAILS</Container>
         <Container>DETAILS</Container>
         <Container>DETAILS</Container>

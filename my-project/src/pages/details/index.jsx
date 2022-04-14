@@ -5,13 +5,14 @@ import Flex from "../../components/shared/composers/Flex";
 import Description from "../../components/card_detail/description";
 
 import About from "../../components/card_detail/About";
+import Surface from "../../components/card_detail/surface";
 
 const Details = () => {
   return (
-    <Container className='bg-white space-y-4 m-4'>
+    <Container className="bg-white space-y-4 m-4">
       <Description />
       <About />
-
+      <Surface />
     </Container>
   );
 };

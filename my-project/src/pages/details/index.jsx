@@ -10,18 +10,16 @@ import Surface from "../../components/card_detail/surface";
 
 import Energy from "../../components/card_detail/energy";
 
-
 const Details = () => {
   return (
-    <Container className="bg-white space-y-4 m-4">
-      <Description />
-      <Données />
-      <About />
-
-      <Surface />
-
-      <Energy />
-
+    <Container className=''>
+      <Container className='bg-white space-y-4 m-4'>
+        <Description />
+        <Données />
+        <About />
+        <Surface />
+        <Energy />
+      </Container>
     </Container>
   );
 };

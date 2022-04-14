@@ -9,8 +9,8 @@ const Description = () => {
     console.log(state);
   }
   return (
-    <Container className="p-5 bg-white rounded-xl shadow-2xl shadow-black">
-      <Container className="text-base font-semibold leading-6 mb-4">
+    <Container className='p-5 bg-white rounded-xl shadow-2xl shadow-slate-300'>
+      <Container className='text-base font-semibold leading-6 mb-4'>
         Description
       </Container>
 
@@ -33,10 +33,10 @@ const Description = () => {
         wordt dagelijks met liefde onderhouden. Top investering met 100%
         garantie op onderhoud en betaling.
       </Container>
-      <Flex justify="end" className="">
+      <Flex justify='end' className=''>
         <Container
           onClick={handleClick}
-          className="text-[#3F8CFF] font-semibold"
+          className='text-[#3F8CFF] font-semibold'
         >
           {state ? "Lire plus" : "Lire moins"}
         </Container>

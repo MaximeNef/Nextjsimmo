@@ -13,7 +13,7 @@ const Card = () => {
   return (
     <Container
       onClick={handleClick}
-      className=' mx-4  my-10 p-8 h-[600px]   rounded-[30px] shadow-2xl relative'
+      className='!text-white mx-4  my-10 p-8 h-[600px] rounded-[30px] shadow-2xl relative'
     >
       <Image
         src='/assets/card/villa.png'

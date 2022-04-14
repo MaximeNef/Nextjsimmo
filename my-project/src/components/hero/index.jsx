@@ -75,7 +75,7 @@ const Hero = () => {
         times: [0, 0.1, 0.9, 1],
         ease: [0.17, 0.17, 0.73, 0.99],
       }}
-      className='bg-black absolute w-full h-full z-30 '
+      className='bg-black  w-full h-full z-30 fixed'
     >
       <Container className=''>
         <motion.div

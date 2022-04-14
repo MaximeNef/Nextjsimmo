@@ -1,10 +1,12 @@
 import Lottie from "react-lottie";
-import burgerMenu from "./../../../../public/assets/lotties/whitemenu.json";
+import burgerMenu from "./../../../../public/assets/lotties/burgermenu.json";
 import Container from "../../shared/composers/container";
 import { useState } from "react";
 import Popup from "./popup";
-import Flex from "../../shared/composers/flex";
 import { motion } from "framer-motion";
+import Image from "next/image";
+import useTranslation from "next-translate/useTranslation";
+import Link from "next/link";
 
 const Menuburger = () => {
   //menu= valeur de la fonction ,   setMenu= valeur qui va être changé, useState= valeur initiale (pop-up burger menu )
@@ -12,12 +14,12 @@ const Menuburger = () => {
   const [pause, setPause] = useState(true);
   const [play, setPlay] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
-
+  const { t, lang } = useTranslation("common");
   const [link, setLink] = useState([
-    { page: "Acceuil", href: "/", selected: false },
-    { page: "Nos biens", href: "/", selected: false },
-    { page: "A propos", href: "/", selected: false },
-    { page: "Contact", href: "/", selected: false },
+    { page: t("popup_acceuil"), href: "/", selected: false },
+    { page: t("popup_biens"), href: "/", selected: false },
+    { page: t("popup_about"), href: "/", selected: false },
+    { page: t("popup_contact"), href: "/", selected: false },
   ]);
   const defaultOptions = {
     name: "menuBurger",
@@ -49,11 +51,19 @@ const Menuburger = () => {
     }
   }
   return (
-    <Container>
-      <Flex justify='center' className='text-[42px] font-semibold  '>
-        Archybald
-      </Flex>
-      <Container onClick={handelClick} className=' right-3 z-20 fixed'>
+    <Container className=''>
+      <Container className='text-[42px] font-semibold m-auto mt-[-60px]'>
+        <Link href='/'>
+          <Image
+            src='/assets/logo.png'
+            alt='Picture of the author'
+            width={300}
+            height={200}
+          />
+        </Link>
+      </Container>
+
+      <Container onClick={handelClick} className=' right-3 z-20 fixed mt-3'>
         <Lottie
           options={defaultOptions}
           height={48}
@@ -61,20 +71,26 @@ const Menuburger = () => {
           isPaused={pause}
           IsPlaying={play}
         />
-      </Container>{" "}
+      </Container>
+
       {/* pop-Up menu burger  */}
       <motion.div
         initial={false}
         variants={menuVariants}
         animate={isOpen ? "opened" : "closed"}
-        className='bg-[#3B3C3E] h-full w-full fixed z-10 flex '
+        className='bg-white h-full w-full fixed z-10 flex '
         transition={{
           duration: 0.7,
           times: [0, 0.1, 0.9, 1],
           ease: [0.17, 0.17, 0.73, 0.99],
         }}
       >
-        <Popup link={link} />
+        <Popup
+          link={link}
+          isOpen={isOpen}
+          setIsOpen={setIsOpen}
+          burgerClick={handelClick}
+        />
       </motion.div>
     </Container>
   );

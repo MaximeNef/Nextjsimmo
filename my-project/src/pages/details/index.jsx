@@ -5,7 +5,11 @@ import Flex from "../../components/shared/composers/Flex";
 import Description from "../../components/card_detail/description";
 import Données from "../../components/card_detail/données";
 import About from "../../components/card_detail/About";
+
+import Surface from "../../components/card_detail/surface";
+
 import Energy from "../../components/card_detail/energy";
+
 
 const Details = () => {
   return (
@@ -13,7 +17,11 @@ const Details = () => {
       <Description />
       <Données />
       <About />
+
+      <Surface />
+
       <Energy />
+
     </Container>
   );
 };

@@ -8,22 +8,28 @@ const Agency = () => {
       <Container className="text-base font-semibold mb-4">
         À propos de l'agence
       </Container>
-      <Container>C21 Everone</Container>
-      <Container>n° de licence:</Container>
-      <Container>n° IPI</Container>
-      <Flex>
+      <Container className="text-base font-semibold">C21 Everone</Container>
+      <Container className="text-[10px] text-gray-400">
+        n° de licence:
+      </Container>
+      <Container className="text-[10px] text-gray-400">n° IPI</Container>
+      <Flex className="mb-4 mt-3">
         <Image src="/assets/contact/location.svg" height={16} width={16} />
 
-        <Container>Avenue Henri Conscience 74 1040</Container>
+        <Container className="text-sm font-semibold ml-3">
+          Avenue Henri Conscience 74 1040
+        </Container>
       </Flex>
-      <Flex>
+      <Flex className="mb-4">
         <Image src="/assets/contact/envelope.svg" height={16} width={16} />
 
-        <Container>maxime@nightborn.be</Container>
+        <Container className="text-sm font-semibold ml-3">
+          maxime@nightborn.be
+        </Container>
       </Flex>
-      <Flex align="center">
+      <Flex className="mb-4">
         <Image src="/assets/contact/phone.svg" height={16} width={16} />
-        <Container>0494903665</Container>
+        <Container className="text-sm font-semibold ml-3">0494903665</Container>
       </Flex>
     </Container>
   );

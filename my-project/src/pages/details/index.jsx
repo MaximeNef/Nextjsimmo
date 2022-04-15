@@ -9,7 +9,11 @@ import About from "../../components/card_detail/About";
 import Surface from "../../components/card_detail/surface";
 
 import Energy from "../../components/card_detail/energy";
+
 import Outside from "../../components/card_detail/outside";
+
+import Inside from "../../components/card_detail/inside";
+
 
 const Details = () => {
   return (
@@ -20,7 +24,11 @@ const Details = () => {
         <About />
         <Surface />
         <Energy />
+
         <Outside />
+
+        <Inside />
+
       </Container>
     </Container>
   );

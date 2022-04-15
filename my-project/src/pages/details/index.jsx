@@ -10,6 +10,11 @@ import Energy from "../../components/card_detail/energy";
 import HeroImg from "../../components/card_detail/image";
 import FooterDetails from "../../components/card_detail/FooterDetails";
 
+import Outside from "../../components/card_detail/outside";
+
+import Inside from "../../components/card_detail/inside";
+
+
 const Details = () => {
   return (
     <Container className=''>
@@ -20,7 +25,9 @@ const Details = () => {
         <About />
         <Surface />
         <Energy />
-      </Container>{" "}
+        <Outside />
+        <Inside />
+        </Container>
       <FooterDetails />
     </Container>
   );

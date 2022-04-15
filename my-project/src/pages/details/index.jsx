@@ -5,10 +5,10 @@ import Flex from "../../components/shared/composers/Flex";
 import Description from "../../components/card_detail/description";
 import Données from "../../components/card_detail/données";
 import About from "../../components/card_detail/About";
-
 import Surface from "../../components/card_detail/surface";
-
 import Energy from "../../components/card_detail/energy";
+import HeroImg from "../../components/card_detail/image";
+import FooterDetails from "../../components/card_detail/FooterDetails";
 
 import Outside from "../../components/card_detail/outside";
 
@@ -17,19 +17,18 @@ import Inside from "../../components/card_detail/inside";
 
 const Details = () => {
   return (
-    <Container className="">
-      <Container className="bg-white space-y-4 m-4">
+    <Container className=''>
+      <HeroImg />
+      <Container className='bg-white space-y-4 m-4 mb-28'>
         <Description />
         <Données />
         <About />
         <Surface />
         <Energy />
-
         <Outside />
-
         <Inside />
-
-      </Container>
+        </Container>
+      <FooterDetails />
     </Container>
   );
 };

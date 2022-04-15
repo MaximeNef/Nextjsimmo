@@ -8,18 +8,20 @@ import About from "../../components/card_detail/About";
 import Surface from "../../components/card_detail/surface";
 import Energy from "../../components/card_detail/energy";
 import HeroImg from "../../components/card_detail/image";
+import FooterDetails from "../../components/card_detail/FooterDetails";
 
 const Details = () => {
   return (
     <Container className=''>
       <HeroImg />
-      <Container className='bg-white space-y-4 m-4'>
+      <Container className='bg-white space-y-4 m-4 mb-28'>
         <Description />
         <Données />
         <About />
         <Surface />
         <Energy />
-      </Container>
+      </Container>{" "}
+      <FooterDetails />
     </Container>
   );
 };

@@ -118,8 +118,6 @@ const Hero = () => {
           </Container>
         </Container>
       </Container>
-
-      <div> </div>
     </motion.div>
   );
 };

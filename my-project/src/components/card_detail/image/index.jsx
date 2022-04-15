@@ -1,6 +1,7 @@
 import Container from "../../shared/composers/container";
 import Flex from "../../shared/composers/Flex";
 import Image from "next/image";
+import BackArrow from "./backArrow";
 
 const HeroImg = () => {
   return (
@@ -13,21 +14,8 @@ const HeroImg = () => {
       />
 
       <Flex type='col' justify='center'>
-        <Flex
-          className='relative ml-auto items-center shadow-black shadow-2xl
-          
-        bg-gray-600 rounded-full px-3 py-2 text-center max-h-[50px] w-[118px] bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60'
-        >
-          <Flex type='col' align='center' justify='center' className='m-auto '>
-            <Image
-              src='/assets/card/loca.svg'
-              alt='Picture of the author'
-              width={25}
-              height={25}
-            />
-          </Flex>
-          <Flex className='font-semibold text-lg pr-4'> Maps</Flex>
-        </Flex>{" "}
+        <BackArrow />
+
         <Flex className='relative '>
           <Flex className='min-w-[280px] items-end text-3xl font-extrabold leading-10'>
             {"  Black Modern House"}

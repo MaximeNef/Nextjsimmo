@@ -9,16 +9,18 @@ import About from "../../components/card_detail/About";
 import Surface from "../../components/card_detail/surface";
 
 import Energy from "../../components/card_detail/energy";
+import Inside from "../../components/card_detail/inside";
 
 const Details = () => {
   return (
-    <Container className=''>
-      <Container className='bg-white space-y-4 m-4'>
+    <Container className="">
+      <Container className="bg-white space-y-4 m-4">
         <Description />
         <Données />
         <About />
         <Surface />
         <Energy />
+        <Inside />
       </Container>
     </Container>
   );

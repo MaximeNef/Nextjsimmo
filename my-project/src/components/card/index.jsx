@@ -26,7 +26,7 @@ const Card = () => {
         <Flex
           className='relative ml-auto items-center shadow-black shadow-2xl justify-end
             
-          bg-gray-600 rounded-full px-3 py-2 text-center max-h-[50px] w-[118px] bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60'
+           rounded-full px-3 py-2 text-center max-h-[50px] w-[118px] bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-60'
         >
           <Flex
             type='col'

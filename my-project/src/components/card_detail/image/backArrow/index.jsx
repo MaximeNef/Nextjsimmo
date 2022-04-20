@@ -10,9 +10,9 @@ const BackArrow = ({ onClick }) => {
   return (
     <Container
       onClick={handleClick}
-      className='w-16 h-16 rounded-3xl bg-gray-300 shadow-black shadow-2xl bg-clip-padding backdrop-filter backdrop-blur-xl'
+      className='w-16 h-16 rounded-[21px]  shadow-black shadow-2xl bg-clip-padding backdrop-filter backdrop-blur bg-opacity-60'
     >
-      <Container className='w-14 h-14 bg-white rounded-[20px] m-auto items-center justify-center shadow-white shadow-2xl bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-90'>
+      <Container className=' m-auto items-center justify-center'>
         <Image
           src='/assets/details/ArrowBack.svg'
           alt='Picture of the author'

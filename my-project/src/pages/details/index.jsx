@@ -13,7 +13,7 @@ import FooterDetails from "../../components/card_detail/FooterDetails";
 import Outside from "../../components/card_detail/outside";
 
 import Inside from "../../components/card_detail/inside";
-
+import BackArrow from "../../components/card_detail/image/backArrow";
 
 const Details = () => {
   return (
@@ -27,7 +27,7 @@ const Details = () => {
         <Energy />
         <Outside />
         <Inside />
-        </Container>
+      </Container>
       <FooterDetails />
     </Container>
   );

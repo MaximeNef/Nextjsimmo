@@ -8,8 +8,16 @@ import Translation from "../translation";
 const Popup = ({ link, isOpen, setIsOpen, burgerClick }) => {
   return (
     <Container className='text-2xl font-light	 m-auto space-y-5 tracking-wide'>
-      <Flex justify='center' className='text-[42px] font-semibold mb-12'>
-        Archybald
+      <Flex justify='center' className='mx-auto mb-2'>
+        <Link href='/'>
+          <Image
+            src='/assets/logo.png'
+            alt='Picture of the author'
+            width={150}
+            height={100}
+            className='m-auto'
+          />
+        </Link>
       </Flex>
       {link.map((link) => {
         return (

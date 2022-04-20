@@ -5,7 +5,7 @@ const BtnContact = () => {
   return (
     <Link href='/contact'>
       <Container className=' text-lg font-semibold bg-black text-white p-4 rounded-2xl'>
-        reserve now
+        Contactez-nous
       </Container>
     </Link>
   );

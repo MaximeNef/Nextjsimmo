@@ -51,47 +51,51 @@ const Menuburger = () => {
     }
   }
   return (
-    <Container className=''>
-      <Container className='text-[42px] font-semibold m-auto mt-[-60px]'>
-        <Link href='/'>
-          <Image
-            src='/assets/logo.png'
-            alt='Picture of the author'
-            width={300}
-            height={200}
+    <Container className=' mb-14'>
+      <Container className='fixed z-20 bg-white w-full top-0 max-h-[50px] '>
+        <Container className=' m-auto '>
+          <Link href='/'>
+            <Image
+              src='/assets/logo.png'
+              alt='Picture of the author'
+              width={100}
+              height={48}
+              className='m-auto'
+            />
+          </Link>
+        </Container>
+
+        <Container onClick={handelClick} className=' right-3 z-20 fixed   '>
+          <Lottie
+            options={defaultOptions}
+            height={48}
+            width={43}
+            isPaused={pause}
+            IsPlaying={play}
+            className=''
           />
-        </Link>
-      </Container>
+        </Container>
 
-      <Container onClick={handelClick} className=' right-3 z-20 fixed mt-3'>
-        <Lottie
-          options={defaultOptions}
-          height={48}
-          width={43}
-          isPaused={pause}
-          IsPlaying={play}
-        />
-      </Container>
-
-      {/* pop-Up menu burger  */}
-      <motion.div
-        initial={false}
-        variants={menuVariants}
-        animate={isOpen ? "opened" : "closed"}
-        className='bg-white h-full w-full fixed z-10 flex '
-        transition={{
-          duration: 0.7,
-          times: [0, 0.1, 0.9, 1],
-          ease: [0.17, 0.17, 0.73, 0.99],
-        }}
-      >
-        <Popup
-          link={link}
-          isOpen={isOpen}
-          setIsOpen={setIsOpen}
-          burgerClick={handelClick}
-        />
-      </motion.div>
+        {/* pop-Up menu burger  */}
+        <motion.div
+          initial={false}
+          variants={menuVariants}
+          animate={isOpen ? "opened" : "closed"}
+          className='bg-white h-full w-full fixed z-10 flex '
+          transition={{
+            duration: 1.5,
+            times: [0, 0.1, 0.9, 1],
+            ease: [0.17, 0.17, 0.73, 0.99],
+          }}
+        >
+          <Popup
+            link={link}
+            isOpen={isOpen}
+            setIsOpen={setIsOpen}
+            burgerClick={handelClick}
+          />
+        </motion.div>
+      </Container>{" "}
     </Container>
   );
 };
